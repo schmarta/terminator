@@ -18,22 +18,35 @@ A comedic Claude Code plugin in the spirit of [caveman](https://github.com/juliu
 
 ## Install
 
+**1. Get the repo:**
+
 ```bash
-# Add this repo as a local marketplace, then install the plugin
-/plugin marketplace add /path/to/terminator
+git clone https://github.com/schmarta/terminator.git
+```
+
+**2. In Claude Code, add it as a marketplace and install the plugin** (use the full path to where you cloned it):
+
+```bash
+/plugin marketplace add ./terminator
 /plugin install terminator@terminator
 ```
 
-On first session Claude will offer to wire up the statusline badge. To do it manually, add to `~/.claude/settings.json`:
+That's it. Terminator comes online automatically at the next session. Skip to [Usage](#usage).
+
+### Optional: statusline badge
+
+Shows `[TERMINATOR]` in your statusline when online. On first session Claude offers to set this up for you — just say yes.
+
+To do it yourself, add this to `~/.claude/settings.json` (replace `<path>` with your clone location):
 
 ```json
 "statusLine": {
   "type": "command",
-  "command": "bash /path/to/terminator/src/hooks/terminator-statusline.sh"
+  "command": "bash <path>/terminator/src/hooks/terminator-statusline.sh"
 }
 ```
 
-(Windows: `powershell -ExecutionPolicy Bypass -File <path>\terminator-statusline.ps1`)
+Windows: swap the command for `powershell -ExecutionPolicy Bypass -File <path>\terminator\src\hooks\terminator-statusline.ps1`
 
 ## Usage
 
