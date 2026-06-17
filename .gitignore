@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.local
+*.swp
+*.swo
+*~
+
+# benchmark outputs (keep the dir, not the runs)
+benchmarks/results/*.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node
+node_modules/
+
+# os
+.DS_Store

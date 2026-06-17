@@ -1,0 +1,68 @@
+Judging 10 tasks with claude-opus-4-8
+  [1/10] judging react-rerender...
+  [2/10] judging auth-middleware-fix...
+  [3/10] judging postgres-pool...
+  [4/10] judging git-rebase-merge...
+  [5/10] judging async-refactor...
+  [6/10] judging microservices-monolith...
+  [7/10] judging pr-security-review...
+  [8/10] judging docker-multi-stage...
+  [9/10] judging race-condition-debug...
+  [10/10] judging error-boundary...
+
+Quality results saved to /Users/lucas/Projects/terminator/benchmarks/results/quality_20260617_183907.json
+README.md quality section updated.
+
+WARNING: 3 task(s) below 7.0: react-rerender, postgres-pool, race-condition-debug
+| Task | Tokens saved | Quality (0–10) | Retained |
+|------|------------:|:--------------:|---------:|
+| Explain React re-render bug | 67% | 6 | 60% |
+| Fix auth middleware token expiry | 57% | 8 | 80% |
+| Set up PostgreSQL connection pool | 57% | 6 | 60% |
+| Explain git rebase vs merge | 41% | 8 | 80% |
+| Refactor callback to async/await | 32% | 9 | 90% |
+| Architecture: microservices vs monolith | 29% | 8 | 80% |
+| Review PR for security issues | 20% | 8 | 80% |
+| Docker multi-stage build | 62% | 7 | 70% |
+| Debug PostgreSQL race condition | 47% | 6 | 60% |
+| Implement React error boundary | 63% | 8 | 80% |
+| **Average** | **48%** | **7.4** | **74%** |
+
+*Average functional fidelity 7.4/10 (lowest task 6/10) at 48% mean token savings. Quality scores judging substance only — brevity is not penalized.*
+
+```
+quality retained %
+100 |                                              
+ 94 |                                              
+ 88 |              E                               
+ 82 |         G   F    D       B J                 
+ 76 |                                              
+ 71 |                            H                 
+ 65 |                                              
+ 59 |                     I    C   A               
+ 53 |                                              
+ 47 |                                              
+ 41 |                                              
+ 35 |                                              
+ 29 |                                              
+ 24 |                                              
+ 18 |                                              
+ 12 |                                              
+  6 |                                              
+  0 |                                              
+    +----------------------------------------------
+     0                                          100  tokens saved %
+
+Target quadrant: top-right (high savings, quality at parity).
+```
+
+A = Explain React re-render bug (67% saved, 6/10)
+B = Fix auth middleware token expiry (57% saved, 8/10)
+C = Set up PostgreSQL connection pool (57% saved, 6/10)
+D = Explain git rebase vs merge (41% saved, 8/10)
+E = Refactor callback to async/await (32% saved, 9/10)
+F = Architecture: microservices vs monolith (29% saved, 8/10)
+G = Review PR for security issues (20% saved, 8/10)
+H = Docker multi-stage build (62% saved, 7/10)
+I = Debug PostgreSQL race condition (47% saved, 6/10)
+J = Implement React error boundary (63% saved, 8/10)

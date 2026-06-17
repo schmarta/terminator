@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "terminator",
+  "description": "Mission mode for Claude Code. Cut token usage while keeping full technical accuracy by responding as the Terminator.",
+  "owner": {
+    "name": "Lucas Marta",
+    "url": "https://github.com/lucasmarta"
+  },
+  "plugins": [
+    {
+      "name": "terminator",
+      "description": "Send the Terminator off on a task. Terse, robotic, low-token. Keeps all technical accuracy.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

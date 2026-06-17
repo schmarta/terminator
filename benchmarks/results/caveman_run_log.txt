@@ -1,0 +1,47 @@
+  [1/10] react-rerender | caveman | trial 1/3
+  [1/10] react-rerender | caveman | trial 2/3
+  [1/10] react-rerender | caveman | trial 3/3
+  [2/10] auth-middleware-fix | caveman | trial 1/3
+  [2/10] auth-middleware-fix | caveman | trial 2/3
+  [2/10] auth-middleware-fix | caveman | trial 3/3
+  [3/10] postgres-pool | caveman | trial 1/3
+  [3/10] postgres-pool | caveman | trial 2/3
+  [3/10] postgres-pool | caveman | trial 3/3
+  [4/10] git-rebase-merge | caveman | trial 1/3
+  [4/10] git-rebase-merge | caveman | trial 2/3
+  [4/10] git-rebase-merge | caveman | trial 3/3
+  [5/10] async-refactor | caveman | trial 1/3
+  [5/10] async-refactor | caveman | trial 2/3
+  [5/10] async-refactor | caveman | trial 3/3
+  [6/10] microservices-monolith | caveman | trial 1/3
+  [6/10] microservices-monolith | caveman | trial 2/3
+  [6/10] microservices-monolith | caveman | trial 3/3
+  [7/10] pr-security-review | caveman | trial 1/3
+  [7/10] pr-security-review | caveman | trial 2/3
+  [7/10] pr-security-review | caveman | trial 3/3
+  [8/10] docker-multi-stage | caveman | trial 1/3
+  [8/10] docker-multi-stage | caveman | trial 2/3
+  [8/10] docker-multi-stage | caveman | trial 3/3
+  [9/10] race-condition-debug | caveman | trial 1/3
+  [9/10] race-condition-debug | caveman | trial 2/3
+  [9/10] race-condition-debug | caveman | trial 3/3
+  [10/10] error-boundary | caveman | trial 1/3
+  [10/10] error-boundary | caveman | trial 2/3
+  [10/10] error-boundary | caveman | trial 3/3
+
+Saved /Users/lucas/Projects/terminator/benchmarks/results/caveman_benchmark_20260617_192109.json
+| Task | Normal (tokens) | Terminator (tokens) | Saved |
+|------|---------------:|-------------------:|------:|
+| Explain React re-render bug | 905 | 229 | 75% |
+| Fix auth middleware token expiry | 1059 | 259 | 76% |
+| Set up PostgreSQL connection pool | 2260 | 687 | 70% |
+| Explain git rebase vs merge | 991 | 425 | 57% |
+| Refactor callback to async/await | 454 | 317 | 30% |
+| Architecture: microservices vs monolith | 976 | 472 | 52% |
+| Review PR for security issues | 867 | 644 | 26% |
+| Docker multi-stage build | 2132 | 651 | 69% |
+| Debug PostgreSQL race condition | 1339 | 378 | 72% |
+| Implement React error boundary | 4096 | 1567 | 62% |
+| **Average** | **1508** | **563** | **59%** |
+
+*Range: 26%–76% savings across prompts.*

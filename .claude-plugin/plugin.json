@@ -1,0 +1,34 @@
+{
+  "name": "terminator",
+  "description": "Mission mode for Claude Code. Send the Terminator off on a task — terse robotic declaratives cut token usage while keeping full technical accuracy. T-models: lite, t-800, t-1000.",
+  "author": {
+    "name": "Lucas Marta",
+    "url": "https://github.com/lucasmarta"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/src/hooks/terminator-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Bringing Terminator online..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/src/hooks/terminator-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking Terminator model..."
+          }
+        ]
+      }
+    ]
+  }
+}
